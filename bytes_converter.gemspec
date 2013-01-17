@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["piotr.m.wasilewski@gmail.com"]
   gem.description   = %q{Gem converting Kilobytes, Megabytes and Gigabytes to bytes}
   gem.summary       = %q{kB, MB, GB to bytes converter}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/wasilak/bytes_converter"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
