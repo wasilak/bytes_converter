@@ -20,15 +20,20 @@ Or install it yourself as:
 
 first:
 
-```require 'bytes_converter'```
+```ruby
+require "bytes_converter"
+```
 
 Converting strings to bytes:
 
-```BytesConverter::convert "some string"```
+```ruby
+BytesConverter::convert "some string"
+```
 
 where "some string" can be anything like in these examples:
 
-```BytesConverter::convert "12.3M" # --> 12897484.8
+```ruby
+BytesConverter::convert "12.3M" # --> 12897484.8
 BytesConverter::convert "12.3" # --> 12.3 (no unit means bytes)
 BytesConverter::convert "12.3 kilo bytes" # --> 12595.2
 BytesConverter::convert "12.3 Megabytes" # --> 12897484.8
@@ -41,16 +46,22 @@ BytesConverter::convert "123" # --> 123
 
 You can add new unit as a hash. Let's say you want OrangeBytes unit:
 
-```orange = {"o" => 2}
-BytesConverter::add_unit orange```
+```ruby
+orange = {"o" => 2}
+BytesConverter::add_unit orange
+```
 
 ... and remove it with:
 
-```BytesConverter::remove_unit "o"```
+```ruby
+BytesConverter::remove_unit "o"
+```
 
 To get all available units:
 
-```BytesConverter::get_units"```
+```ruby
+BytesConverter::get_units"
+```
 
 ## Contributing
 
