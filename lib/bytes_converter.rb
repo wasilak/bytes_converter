@@ -45,10 +45,7 @@ module BytesConverter
 
   # getter for sizes
   def self.get_units
-    @sizes.each do | key, value |
-      puts "unit: #{key} = #{value}"
-    end
-    "end of list"
+    @sizes
   end
 
   # method removing size
