@@ -27,7 +27,7 @@ require "bytes_converter"
 Converting strings to bytes:
 
 ```ruby
-BytesConverter::convert "some string"
+BytesConverter::convert "some string" # --> Float
 ```
 
 where "some string" can be anything like in these examples:
@@ -60,7 +60,7 @@ BytesConverter::remove_unit "o"
 To get all available units:
 
 ```ruby
-BytesConverter::get_units"
+BytesConverter::get_units # --> Hash
 ```
 
 ## Contributing
