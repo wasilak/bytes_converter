@@ -1,4 +1,4 @@
-# BytesConverter
+# BytesConverter [![Build Status](https://travis-ci.org/wasilak/bytes_converter.png)](undefined)
 
 Gem converting Kilobytes, Megabytes and Gigabytes into bytes.
 
