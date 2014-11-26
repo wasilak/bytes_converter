@@ -1,4 +1,5 @@
-# BytesConverter [![Build Status](https://travis-ci.org/wasilak/bytes_converter.png)](undefined)
+# BytesConverter 
+[![Build Status](https://travis-ci.org/wasilak/bytes_converter.png)](undefined) [![Gem Version](https://badge.fury.io/rb/bytes_converter.svg)](http://badge.fury.io/rb/bytes_converter) [![Code Climate](https://codeclimate.com/github/wasilak/bytes_converter/badges/gpa.svg)](https://codeclimate.com/github/wasilak/bytes_converter)
 
 Gem converting Kilobytes, Megabytes and Gigabytes into bytes.
 
