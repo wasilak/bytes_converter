@@ -47,7 +47,7 @@ describe BytesConverter do
 
     context "when converting not existant unit" do
         it "should return zero" do
-            out = BytesConverter::convert "4 tomatoes"
+            out = BytesConverter::convert "4 squirtles"
             out.should eq(0)
         end
     end
