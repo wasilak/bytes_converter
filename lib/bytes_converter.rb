@@ -6,7 +6,9 @@ module BytesConverter
   @sizes = {
       "k" => 1024,
       "m" => 1024*1024,
-      "g" => 1024*1024*1024
+      "g" => 1024*1024*1024,
+      "t" => 1024*1024*1024*1024,
+      "p" => 1024*1024*1024*1024*1024
     }
 
   # method converting size into bytes
