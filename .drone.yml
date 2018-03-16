@@ -5,10 +5,10 @@ pipeline:
       - bundle install
       - bundle exec rake
 
-  matrix:
-    RUBY_VERSION:
-      - latest
-      - "2.5"
-      - "2.4"
-      - "2.3"
-      - "2.2"
+matrix:
+  RUBY_VERSION:
+    - latest
+    - "2.5"
+    - "2.4"
+    - "2.3"
+    - "2.2"
