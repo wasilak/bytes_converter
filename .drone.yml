@@ -1,6 +1,14 @@
 pipeline:
   build:
-    image: ruby:2.2
+    image: ruby:${RUBY_VERSION}
     commands:
       - bundle install
       - bundle exec rake
+
+  matrix:
+    RUBY_VERSION:
+      - latest
+      - "2.5"
+      - "2.4"
+      - "2.3"
+      - "2.2"
