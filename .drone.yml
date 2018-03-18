@@ -1,10 +1,12 @@
 pipeline:
   build:
     image: ruby:${RUBY_VERSION}
+    environment:
+        - GENERATE_REPORTS=true
+    secrets: [ codecov_secret ]
     commands:
       - bundle install
-      - GENERATE_REPORTS=true CODECOV_TOKEN=codecov_token bundle exec rake
-    secrets: [ codecov_token ]
+      - CODECOV_TOKEN=$CODECOV_SECRET bundle exec rake
 
 matrix:
   RUBY_VERSION:

@@ -1,6 +1,14 @@
 require 'spec_helper'
 require 'bytes_converter'
 
+if ENV['GENERATE_REPORTS'] == 'true' and ENV['CODECOV_TOKEN']
+  require 'simplecov'
+  SimpleCov.start
+
+  require 'codecov' 
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
+
 describe BytesConverter do
     context "when getting list" do
         it "should return hash" do

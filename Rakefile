@@ -10,10 +10,4 @@ task :default => :spec
 if ENV['GENERATE_REPORTS'] == 'true'
   require 'ci/reporter/rake/rspec'
   task :spec => 'ci:setup:rspec'
-
-  require 'simplecov'
-  SimpleCov.start
-
-  require 'codecov'
-  SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end
