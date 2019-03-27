@@ -1,13 +1,19 @@
-pipeline:
-  build:
-    image: ruby:${RUBY_VERSION}
-    environment:
-        - GENERATE_REPORTS=true
-    secrets: [ codecov_secret ]
-    commands:
-      - bundle install
-      - CODECOV_TOKEN=$CODECOV_SECRET bundle exec rake
+---
+kind: pipeline
+name: matrix-1
 
-matrix:
-  RUBY_VERSION:
-    - latest
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: build
+  pull: default
+  image: ruby:latest
+  commands:
+  - bundle install
+  - CODECOV_TOKEN=$CODECOV_SECRET bundle exec rake
+  environment:
+    CODECOV_SECRET:
+      from_secret: codecov_secret
+    GENERATE_REPORTS: true
