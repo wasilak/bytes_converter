@@ -6,8 +6,8 @@ require 'bytes_converter/version'
 Gem::Specification.new do |gem|
   gem.name          = "bytes_converter"
   gem.version       = BytesConverter::VERSION
-  gem.authors       = ["Piotr Wasilewski"]
-  gem.email         = ["piotr.m.wasilewski@gmail.com"]
+  gem.authors       = ["Piotr Boruc"]
+  gem.email         = ["piotr.m.boruc@gmail.com"]
   gem.description   = %q{Gem converting Kilobytes, Megabytes and Gigabytes to bytes}
   gem.summary       = %q{kB, MB, GB to bytes converter}
   gem.homepage      = "https://github.com/wasilak/bytes_converter"

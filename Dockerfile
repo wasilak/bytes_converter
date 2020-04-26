@@ -1,4 +1,4 @@
-FROM ruby:2.2
+FROM ruby:2.7
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 RUN bundle install
